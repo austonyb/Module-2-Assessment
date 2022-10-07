@@ -23,9 +23,10 @@
 
 class Employee {
     constructor(name, shifts){
-        this.name = name;
-        this.shifts = shifts;
+        this.name = name
+        this.shifts = shifts
     }
+
     getSchedule(){
         console.log(`${this.name} works on ${this.shifts}.`)
     }
@@ -69,13 +70,9 @@ empOne.getSchedule()
 
 //CODE HERE
 
-let empTwo = {...empOne}
+let empTwo = {...empOne, name: 'Nick'}
 
-console.log(empTwo)
-
-delete empTwo.name
-empTwo.name = 'Nick'
-console.log(empTwo)
+// console.log(empTwo)
 
 
 //////////////////PROBLEM 2////////////////////
@@ -112,6 +109,7 @@ class Manager extends Employee {
     getEmployees(){
         console.log(`${this.name} manages: ${this.employees}.`)
     }
+
     addEmployees(emp){
         this.employees.push(emp)
     }
@@ -157,4 +155,4 @@ manager.addEmployees('Coach')
 
 //CODE HERE
 
-manager.getEmployees
+manager.getEmployees()
