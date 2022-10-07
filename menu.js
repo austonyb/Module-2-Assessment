@@ -158,8 +158,8 @@ const foodArr = [
 
 //CODE HERE
 
-const filteredFood2 = foodArr.filter((foodObj) => foodObj.tags.includes('ice cream'))
-console.log(filteredFood2)
+const filteredFood = foodArr.filter((foodObj) => foodObj.tags.includes('ice cream'))
+console.log(filteredFood)
 
 // const filteredFood = foodArr.filter(arr => {
 //     return arr.tags.includes('ice cream')
@@ -208,21 +208,30 @@ console.log(filteredFood2)
 
 //CODE HERE
 
-//property = rating. This will be in a string, so it will need to be converted into a number.
 
-function filterByProperty(propertyType, number, type) {
-    let filteredResults = []
-    if (type === 'above'){
-        return filteredResults.push(foodArr.filter(foodArr => {
-            foodArr.propertyType > number
-        }))
-    } else if (type === 'below') {
-        return filteredResults.push(foodArr.filter(foodArr => {
-            foodArr.propertyType < number
-        }))
-    }
+// function filterByProperty(propertyType, number, type) {
+//     let filteredResults = []
+//     if (type === 'above'){
+//         return filteredResults.push(foodArr.filter(foodArr => {
+//             foodArr.propertyType > number
+//         }))
+//     } else if (type === 'below') {
+//         return filteredResults.push(foodArr.filter(foodArr => {
+//             foodArr.propertyType < number
+//         }))
+//     }
+// }
+
+function filterByProperty(property, number, type) {
+    let filteredArray = foodArr.filter((foodObj) => {
+        if (type === 'above') {
+            return foodObj[property] > number
+        } else if (type === 'below'){
+            return foodObj[property] < number
+        }
+    })
+    return filteredArray
 }
-
 
 
 
@@ -235,4 +244,4 @@ function filterByProperty(propertyType, number, type) {
 
 //CODE HERE
 
-console.log("This is the filter by property console log" + filterByProperty('rating', 4, 'above'))
+console.log(filterByProperty('rating', 4, 'above'))
