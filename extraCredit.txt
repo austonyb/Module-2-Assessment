@@ -1,0 +1,26 @@
+Tech Stacks for companies that interest me:
+
+1. Apple - 
+    Application and data:
+        Swift, Objective C, Cocoa Touch, Cocoa (OSX)
+
+    Utilities:
+        Framer, OpenStreetMap
+    
+    DevOps:
+        Xcode, Pingdom, TeamCity
+
+
+2. Adobe - 
+    Application and data:
+        JavaScript, Apache Cordova
+    
+    DevOps: 
+        Git
+
+    Business Tools:
+        Slack
+
+
+3. Spotify -
+    Python, Java, Nginx, PostgreSQL, Bootstrap, Amazon S3, Amazon Cloudfront, Kafka, Cassandra, Hadoop, Google BigQuery, Apache Storm, Google Cloud Big.
