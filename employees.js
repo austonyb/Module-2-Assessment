@@ -73,7 +73,9 @@ let empTwo = {...empOne}
 
 console.log(empTwo)
 
-
+delete empTwo.name
+empTwo.name = 'Nick'
+console.log(empTwo)
 
 
 //////////////////PROBLEM 2////////////////////
@@ -101,7 +103,19 @@ console.log(empTwo)
 
 //CODE HERE
 
+class Manager extends Employee {
+    constructor(name, shifts, employees){
+        super(name, shifts)
+        this.employees = []
+    }
 
+    getEmployees(){
+        console.log(`${this.name} manages ${this.employees}.`)
+    }
+    addEmployees(emp){
+        this.employees.push(emp)
+    }
+}
 
 /*
     Create a new instance of your class.
@@ -115,7 +129,7 @@ console.log(empTwo)
 */
 
 //CODE HERE
-
+let manager = 
 
 /*
     Call the `getEmployees` method on the
