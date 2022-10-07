@@ -31,7 +31,7 @@
 */
 
 //CODE HERE
-const pizza = {
+let pizza = {
     name: "Margharita",
     price: 5,
     category: "entre",
@@ -158,11 +158,14 @@ const foodArr = [
 
 //CODE HERE
 
-const filteredFood = foodArr.filter(arr => {
-    return arr.tags.includes('ice cream')
-})
+const filteredFood2 = foodArr.filter((foodObj) => foodObj.tags.includes('ice cream'))
+console.log(filteredFood2)
 
-console.log(filteredFood)
+// const filteredFood = foodArr.filter(arr => {
+//     return arr.tags.includes('ice cream')
+// })
+
+// console.log(filteredFood)
 
 //////////////////PROBLEM 5////////////////////
 /* 
