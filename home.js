@@ -91,9 +91,23 @@ const canWeDeliverTwo = (arr, zipCode) => {
         return "Sorry, we can't deliver to that address."
     }
 }
-
 // console.log(canWeDeliverTwo(deliveryAreaZipCodes, 85205))
 // console.log(canWeDeliverTwo(deliveryAreaZipCodes, 85209))
+
+
+//another option for above using loops:
+
+function canWeDeliverThree(zipCode) {
+    for (let i = 0; i < deliveryAreaZipCodes.length; i++){
+        if (zipCode === deliveryAreaZipCodes[i]) {
+            return 'You are in our delivery zone!'
+        }
+    }
+    return 'You are not eligible for delivery'
+}
+
+console.log(canWeDeliverThree(85205))
+
 
 //////////////////PROBLEM 3////////////////////
 /* 
